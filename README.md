@@ -6,12 +6,12 @@ vue init webpack demo1
 ```
 
 Use ESLint to lint your code? (Y/n) n
-
+```
 Should we run `npm install` for you after the project has been created? (recommended) (Use arrow keys)
 Yes, use NPM
 Yes, use Yarn
 >No, I will handle that myself
-
+```
 使用淘宝镜像安装依赖
 ```
 cd demo1 && cnpm i 
@@ -19,18 +19,18 @@ npm run dev
 ```
 安装需要用到的模块vuex element-ui axios md5 
 
-···
+```
 cnpm i --save vuex element-ui axios md5 
-···
+```
 
 App.vue  只留下一个视口为一级路由做准备
-···
+```
 <template>
   <div id="app">
     <router-view/>
   </div>
 </template>
-···
+```
 src/components/index下新建index.vue文件
 ```
 <template>
@@ -128,7 +128,7 @@ src/components/index下新建index.vue文件
   }
 </style>
 ```
-,并创建相应的二级路由的文件home、cart、order、mine，其中class名为自己写的弹性盒子布局兼容性类名
+并创建相应的二级路由的文件home、cart、order、mine，其中class名为自己写的弹性盒子布局兼容性类名
 -----------
 src/login创建login.vue文件，并在router中配置为一级路由
 
