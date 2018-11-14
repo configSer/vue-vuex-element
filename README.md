@@ -35,7 +35,7 @@ src/components/index下新建index.vue文件
 ```
 <template>
   <div id="app" class="flex flex-v">
-    <header class="flex flex-hc flex-vc"><h1>我是头部</h1></header>
+    <header class="flex flex-hc flex-vc"><h1>{{msg}}</h1></header>
     <main class="flex1">
       <div class="mainall">
         <router-view/>
@@ -57,25 +57,6 @@ src/components/index下新建index.vue文件
     data () {
       return {
         msg: 'test'
-      }
-    } ,
-    mounted () {
-      let path = this.$route.path;
-      if ( path.indexOf( "/home" ) !== -1 ) {
-        this.$store.state.msg = "home"
-      }else if ( path.indexOf( "/cart" ) !== -1 ) {
-        this.$store.state.msg = "cart"
-      }else if ( path.indexOf( "/order" ) !== -1 ) {
-        this.$store.state.msg = "order"
-      }else if ( path.indexOf( "/mine" ) !== -1 ) {
-        this.$store.state.msg = "mine"
-      }
-
-    } ,
-    methods: {
-      changehead ( val ) {
-        let str = val.currentTarget.innerHTML;
-        this.$store.state.msg = str
       }
     }
   }
