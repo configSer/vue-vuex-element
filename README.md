@@ -20,7 +20,7 @@ npm run dev
 安装需要用到的模块vuex element-ui axios md5 
 
 ```
-cnpm i --save vuex element-ui axios md5 
+cnpm i --save vuex element-ui axios js-md5 
 ```
 
 App.vue  只留下一个视口为一级路由做准备
